@@ -1,0 +1,34 @@
+
+    .left{
+        float:left;
+    }
+
+    .right{
+        float:right;
+    }
+
+    .priceCol{
+        width:250px;
+        list-style: none;
+        display: block;
+        height: 100px;
+    }
+
+    .article.notes{
+        margin:0 15%;
+        background-color: #efefef;
+        padding:1rem 3rem;
+        padding-bottom:4rem;
+    }
+
+    @media (max-width:1024px){
+        .article.notes{
+        margin:0 10%;
+        }
+    }
+
+    @media (max-width:768px){
+        .article.notes{
+        margin:0 2%;
+        }
+    }
