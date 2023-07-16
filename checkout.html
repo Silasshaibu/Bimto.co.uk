@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Bimto</title>
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<form action="/" method="POST"> <!--FormUrl and method-->
+    <div class="section checkout"><h2>CHECKOUT</h2></div>
+    <div class="section checkout form">
+        <div class="form-sec first">
+            <h6>PERSONAL DETAILS</h6>
+            <div class="emptySpace one"> 
+                <label for="firstname">First name
+                    <input type="text" name="FirstName" placeholder="John" id="FirstName">
+                </label>           
+                
+                <label for="lastname">Last name
+                    <input type="text" name="LastName" placeholder="Hammond" id="cardHoldersName">
+                </label>
+
+                <label for="email">Email address
+                    <input type="email" name="userEmail" placeholder="example@gmail.com" id="userEmail">
+                </label>
+
+                <label for="tel">Phone number
+                    <input type="tel" name="PhoneNumber" placeholder="NL +31 (0)12345678" id="cardHoldersName">
+                </label>
+            </div>
+        </div>
+        <div class="form-sec first">
+            <h6>SHIPPING DETAILS</h6>
+            <div class="emptySpace two">
+                <label>
+                    <div class="input-container">
+                    <img src="./Assets/Images/dhl.jpg" alt="ShipMethod"  height="30px">
+                    <input type="radio" name="ShipMethod1" placeholder="DHL" id="FirstName">
+                    </div>                    
+                </label>
+
+                <label>
+                    <div class="input-container">                        
+                    <img src="./Assets/Images/UPS-logo-trans.jpg" alt="ShipMethod" height="30px">
+                    <input type="radio" name="ShipMethod1" placeholder="DHL" id="FirstName">
+                    </div>                    
+                </label>
+
+                <label>
+                    <div class="input-container">
+                    <img src="./Assets/Images/fedex-transparent.jpg" alt="ShipMethod" height="30px">
+                    <input type="radio" name="ShipMethod1" placeholder="DHL" id="FirstName">
+                    </div>                    
+                </label>
+
+                <label>
+                    <div class="input-container">
+                    <img src="./Assets/Images/box.jpg" alt="ShipMethod" height="30px">
+                    <input type="radio" name="ShipMethod1" placeholder="DHL" id="FirstName">
+                    </div>                    
+                </label>
+                <p><span class="addBillAdd"> + Add different billing address</span> </p>
+            </div>
+        </div>
+        <div class="form-sec first">
+            <h6>PAYMENT METHOD</h6>
+            <div class="emptySpace three">                
+                    <input type="number" name="CARD NUMBER" placeholder="CARD NUMBER" id="cardNum">
+                    <select type="radio" name="" id="">
+                        <option value="paypal"><svg src="./Assets/Images/Paypal.jpg"></svg>PAYPAL</option>
+                        <option value="stripe">STRIPE</option>
+                        <option value="stripe">VISA</option>
+                        <option value="stripe">MASTERCARD</option>
+                    </select>
+                    
+                    <input type="text" name="CARDHOLDER'S NAME" placeholder="CARDHOLDER'S NAME" id="cardHoldersName">
+                    <div class="selects-three">
+                        <select name="month" id="monthSelect">
+                            <option value="">MM</option>
+                        </select>
+
+                        <select name="year" id="yearSelect">
+                            <option value="">YY</option>
+                        </select>
+                        <span></span>                         <!-- Span used to hold space to retain the design of the UIUX -->
+
+                        <!-- Span used to hold space to retain the design of the UIUX -->
+                        <input type="number" placeholder="CVV"/>
+                    </div>
+                    <div class="lastSec checkbox">
+                         <input type="checkbox"><span class="saveCredCardInfo">Save credit card information</span>
+                    </div>
+                    <div class="lastSec">
+                        <button class="paynow">PAYNOW</button>                        
+                    </div>
+                    
+            </div>            
+        </div>
+    </div>  
+</form>  
+</body>
+<script src="checkout.js"></script>
+</html>

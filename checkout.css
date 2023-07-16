@@ -1,0 +1,175 @@
+.checkout.form{
+    min-height: 100px;
+    /* border:1px solid black; */
+    margin:20px 0px;
+}
+
+.lastSec{
+    display: flex;
+    grid-column:1/-1;
+    /* border:1px solid black; */
+}
+
+.oneLine{
+    display: flex;
+    width:100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: red;
+    margin:0;
+}
+
+.lastSec.checkbox input{
+    max-width:15px;
+    margin-right:10px;
+    background-color: red;    
+}
+
+.saveCredCardInfo{
+    font-size: 12px;
+}
+
+.selects-three{
+    display: grid;
+    gap:10px;
+    grid-template-columns: .3fr .5fr 10px 1fr;
+}
+
+.oneLine input{
+    float:left;
+}
+
+button.paynow{
+    width: 100%;
+}
+
+.emptySpace.one input, .emptySpace.three input{
+    width:100%;
+}
+
+.section{
+    padding:0 20%;
+}
+
+.section h2{
+    text-align: center;
+    padding:10px 0px;
+    /* background-color: red; */
+}
+
+.form-sec{
+    min-height:100px;
+    /* border:1px solid black; */
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.emptySpace{
+    /* background-color: green/; */
+    /* border:1px solid green; */
+    padding-bottom: 20px;
+}
+
+button{
+    padding:10px 20px;
+    border:none;
+    color:white;
+    background-color: rgb(36, 167, 219);   
+    border-radius:3px; 
+    cursor:pointer;
+    transition: all 300ms;
+}
+
+.addBillAdd{
+cursor:pointer;
+font-size: 1/rem;
+color:grey;
+}
+
+.addBillAdd:hover{
+    color:black;
+}
+
+.paynow:hover{
+    background-color: rgb(4, 33, 44);
+}
+
+form input{
+    padding:10px;
+    /* margin-bottom:10px; */
+}
+
+.form-sec.first h6{
+    position: relative;
+}
+
+.form-sec.first:nth-child(1) h6::before, .form-sec.first:nth-child(2) h6::before, .form-sec.first:nth-child(3) h6::before{
+    content: '01';
+    position: absolute;
+    transform: translateY(-15px);
+}
+
+.form-sec.first:nth-child(2) h6::before{
+    content: '02';
+}
+
+.form-sec.first:nth-child(3) h6::before{
+    content: '03';
+}
+
+h6{
+    width:40%;
+}
+
+.emptySpace{
+    /* border:1px solid green; */
+    min-width:60%;
+    width: 100%;
+}
+
+.form-sec p{
+    font-size: 12px;
+    margin-bottom:10px; /*to Push 03 Field Below*/
+}
+.emptySpace{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:15px;
+}
+
+label{
+    font-size:14px;
+}
+
+label div.input-container{
+    border:1px solid rgb(36, 167, 219);
+    border-radius:3px;
+    padding:10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+@media (max-width:700px){
+    body{
+        /* background-color: red; */
+    }
+
+    .selects-three{
+        display: grid;
+        gap:10px;
+        grid-template-columns: .3fr .5fr .1px 1fr;
+    }
+
+    .form-sec{
+        min-height:100px;
+        /* border:1px solid black; */
+        display: flex;
+        flex-direction: column; /*Mobile Section*/
+    }    
+
+    .section{
+        padding:0 5%;
+    }
+}

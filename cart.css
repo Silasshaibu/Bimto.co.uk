@@ -1,0 +1,154 @@
+/* cart styling */
+.section.cart.layer1{
+    width:100%;
+    padding-top:20px;
+    padding:10%;
+    padding-top:20px;
+    padding-bottom:20px;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+}
+
+.shortDescripSection p{
+    font-weight: 600;
+}
+
+.subsec:nth-child(1) p{
+font-weight: 400;
+font-size: .8rem;
+}
+
+.OtherImages{
+    background-color: green;
+}
+:root{
+    --squaredWidth: 300px;
+}
+.imagesProductShow div:nth-child(1){
+    min-width: var(--squaredWidth);
+    min-height: var(--squaredWidth);    
+}
+
+.subsec:nth-child(1) span:nth-child(3){
+    color:green;
+}
+
+.subsec:nth-child(1) span:nth-child(2){
+    color:cyan;
+}
+
+.subsec:nth-child(1) span:nth-child(1){
+    color:blue;
+}
+
+.subsec:nth-child(2) p, .subsec:nth-child(3) p{
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;    
+}
+
+.cart .price{
+    color:rgb(255, 102, 0);
+    padding-left:10px;
+}
+
+.subsec:nth-child(2) p span{
+    font-weight: 500;
+}
+
+button{
+    border-radius:3px;
+    padding:5px 10px;
+    max-height:30px;
+    height:30px;
+    border:none;
+    cursor:pointer;
+}
+
+.like{
+    max-width:30px !important;
+}
+
+.qtyAction button{
+background-color: rgba(170, 222, 238, 0.986);
+}
+
+.addToCart{
+    width:60% !important;
+    min-width:10ch;
+}
+
+.shortDescripSection div:last-child{
+    display: flex;
+    justify-content: space-between;
+}
+
+.prodQuantityAndAction{
+    display: grid;
+    grid-template-columns: 1fr .5fr  1.4fr;
+}
+
+.incrFieldSec button{
+    border-radius: 0px;
+    border:none;
+}
+
+.incrFieldSec button:nth-child(1){
+    border-radius: 3px 0px 0px 3px;
+}
+
+.incrFieldSec button:nth-child(3){
+    border-radius: 0px 3px 3px 0px;
+}
+
+.prodQuantityAndAction div{
+    place-items: center;
+}
+
+.qty{    
+    position:relative;
+}
+
+.subsec span{
+    text-align: left;
+}
+
+.Facebook{    
+    background-color: rgb(1, 53, 88);
+    color:white;
+}
+
+.Twitter{
+    background-color: rgb(53, 162, 235);
+    color:white;
+}
+.shortDescripSection div:last-child button{
+    padding:5px;
+    width: 48%;
+}
+.section div{
+    border:1px solid rgba(0, 0, 0, 0.596);
+    min-height: 50px;
+}
+
+.top{
+    display: flex;
+}
+
+.top div{
+    flex:1;
+}
+
+.shortDescripSection{
+    background-color: orange;
+    padding-left:10px;
+}
+
+.shortDescripSection div.subsec{
+    padding:10px 0px;
+    border-bottom:2px solid grey;
+}
+
+.shortDescripSection div:nth-child(1){
+    padding-top:0px;
+}

@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../../GitHub/Bimto.co.uk"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../Images"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Assets"
+	}
+}
