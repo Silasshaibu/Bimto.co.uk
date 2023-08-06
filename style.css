@@ -640,11 +640,53 @@
         .allMobileElements{
             display: block;
         }
+        .mobileHeader{
+            position: relative;
+        }
+
+        .mobileMenuSection{
+            background-color: rgba(211, 144, 155, 0.925);
+            position: absolute;
+            border:1px solid black;
+            height: 100vh;
+            width:50% !important;
+            top:0;
+            left:0;
+        }
+
+        .slide{
+            display: grid;
+            padding: 1rem 0px;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+        }
+
+        .slide .layer1, .slide .layer2{
+            padding:.8rem;
+        }
+
+        .slide .layer2{
+            list-style: none;
+            display: grid;
+            align-items: center;
+            background-color: white;
+            padding:0rem;
+        }
+
+        .slide .layer2 li{
+            padding:1rem;
+            border-bottom:1px solid #efefef;
+        }
+
+        .slide .layer2 img{
+            border-radius:.5rem;
+            border: none;
+        }
 
         .mobile--Hero{
-        background-color: grey;
-        text-align: center;
-        padding:5rem 10%;
+            background-color: grey;
+            text-align: center;
+            padding:5rem 10%;
         }
 
         button.primary.special{
