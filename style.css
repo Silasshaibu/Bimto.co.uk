@@ -9,6 +9,9 @@
         margin-bottom:var(--distancing);
     }
 
+    p img.searchIcon{
+        cursor: pointer;
+    }
 
     ul.header-switch{
         width:8ch;
@@ -16,13 +19,11 @@
         position: relative;
     }
 
-
     ul.header-switch div{
         margin:0;
         padding:0;
         position: absolute;
         top:2rem;
-        border-radius: 5rem !important;
     }
 
     .nested-li{
@@ -36,6 +37,7 @@
 
     ul.header-switch li{
         background-color: #efefef;
+        background-color: transparent;
         line-height: 1rem;
         padding:.5rem;
         width:8ch;
@@ -80,7 +82,6 @@
     .socials-iconSvg{
         width:50px;
     }
-
 
     .head.layer3 ul a.active{
         border-bottom:3px solid var(--bimtoBlue);
@@ -214,11 +215,17 @@
     ul.header-switch{
         display: block;
         position: relative;
+        cursor:default;
+
+    }
+
+    svg.icons--default--state{
+        cursor: pointer !important;
+
     }
 
     ul.header-switch div{
         position: absolute;
-        display: block;
     }
 
     .head.layer1 .right{
@@ -255,6 +262,10 @@
 
     .right p img{
         cursor: default;
+    }
+
+    img.searchIcon{
+        cursor: pointer;
     }
 
 
@@ -549,6 +560,30 @@
         justify-content: space-between;
     }
 
+    .bannerAdvertSection{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        min-height: 3rem;
+        background-color: #755EED;
+        color:white;
+        font-size: 1rem;
+    }
+
+    .bannerAdvertSection a {
+        color: white !important;
+    }
+
+    span.goToShop{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    /*DISABLE ALL MOBILE ELEMENTS*/
+    .allMobileElements{
+        display: none;
+    }
+
     /* TABLET DEVICES */
     @media (max-width:1024px){
         .hero .featuredProducts{
@@ -601,8 +636,64 @@
 
     /* MOBILE DEVICES */
     @media (max-width:768px){
-        body{
+        /*ENABLE ALL MOBILE ELEMENTS*/
+        .allMobileElements{
+            display: block;
+        }
 
+        .mobile--Hero{
+        background-color: grey;
+        text-align: center;
+        padding:5rem 10%;
+        }
+
+        button.primary.special{
+            width:20ch;
+            align-self: center;
+            padding:1rem 2rem;
+            border-radius: 5rem;
+            border:none;
+            font-size: 1rem;
+            margin:1rem;
+            margin-top:2rem;
+            cursor:pointer;
+            outline:3px solid transparent;
+            transition: all 300ms;
+        }
+
+        button.primary.special:active{
+            border-bottom:2px solid black;
+            outline:3px solid purple;
+            transform:translateY(.3rem);
+        }
+
+        .productCatalogue.gridSystem.overflow{
+            min-height:100px;
+            border:1px solid black;
+        }
+
+        .section.advert .ImageContainer{
+            display: none;
+        }
+
+        .productCatalogue.gridSystem div{
+            border-radius: .2rem;
+            width:300px;
+            overflow: hidden;
+            border:1px solid black;
+            aspect-ratio: 1/1;
+        }
+
+        .mobile--productSection{
+            padding:1rem;
+        }
+
+        .mobile--Hero h1{
+            font-size: 2.5rem;
+
+        }
+        .mobile--Hero p{
+            font-size: 1.5rem;
         }
 
         .mainHeader{
@@ -640,8 +731,23 @@
         img.shopBag{
             /* border:1px solid black; */
             position: relative;
+            cursor: pointer;
             background-color: transparent;
         }
+
+        .bannerAdvertSection{
+            justify-content: start;
+            align-items: center;
+            background-color: #755EED;
+            color:white;
+            padding:0 1rem;
+            font-size: 1rem;
+        }
+
+
+
+
+
 
         .right{
             position: relative;
@@ -666,10 +772,6 @@
             /* align-items: center; */
         }
 
-        .bannerAdvertSection{
-            background-color: #efefef;
-            min-height: 1.5rem;
-        }
 
         .mobileLogoSection{
             display: grid;

@@ -8,10 +8,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="bannerAdvertSection">
+        <p> What goes with pink? More pink. <a href="./shop.html"><strong><span class="goToShop">Shop now</span> </strong></a> for the color of the summer.</p>
+    </div>
     <header class="mainHeader">
-        <div class="head layer1">
+       <div class="head layer1">
             <div>
-                    <ul onclick="toggleLang()" class="header-switch lang active">EN <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icons--default--state caret">
+                <ul onclick="toggleLang()" class="header-switch lang active">EN
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icons--default--state caret">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                     </svg>
                         <div class="nested-li">
@@ -21,7 +25,8 @@
                         </div>
                     </ul>
 
-                    <ul onclick="toggleLang()" class="header-switch currencySwitcher active">USD <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icons--default--state caret">
+                <ul onclick="toggleLang()" class="header-switch currencySwitcher active">USD
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icons--default--state caret">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                         </svg>
                         <div class="nested-li">
@@ -57,35 +62,7 @@
         </div>
     </header>
 
-    <header class="mobileHeader">
-        <div class="bannerAdvertSection">
-            <!--If banner content is available then push here-->
-        </div>
-        <div class="mobileLayer1">
-            <div class="left">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icons--default--state mobile">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                  </svg>
-            </div>
-            <div class="mobileLogoSection">
-                <img src="./Assets/Images/bimto-logo-web.png" alt="BIMTO" width="100px" height="fit-content"/>
-            </div>
-            <div class="right">
-            <img class="shopBag" src="./Assets/Images/bag_cart-icon.svg" height="28px" alt="shoppingBag"/>
-            <span class="numOfItems">0</span>
 
-
-
-            </div>
-
-        </div>
-        <div class="section searchField">
-            <form action="/search" method="GET">
-                <input type="text" name="query" placeholder="All Categories.." spellcheck="false" data-ms-editor="true">
-                <button type="submit">Search</button>
-            </form>
-        </div>
-    </header>
 
     <div class="section hero">
         <div class="searchBox-hero">
@@ -215,10 +192,55 @@
         <a class="linkButton ">LOAD MORE</a>
     </div>
 
+    <!--ALL NECESSARY MOBILE ELEMENTS STARTS HERE-->
+    <div class="allMobileElements" >
+        <header class="mobileHeader">
 
-    <div class="mobileProductGridDisplay--mansonryStyle">
-        <!--Put products to show on mobile devices here-->
+            <div class="mobileLayer1">
+                <div class="left">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icons--default--state mobile">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </div>
+                <div class="mobileLogoSection">
+                    <img src="./Assets/Images/bimto-logo-web.png" alt="BIMTO" width="100px" height="fit-content"/>
+                </div>
+                <div class="right">
+                <img class="shopBag" src="./Assets/Images/bag_cart-icon.svg" height="28px" alt="shoppingBag"/>
+                <span class="numOfItems">0</span>
+
+
+
+                </div>
+
+            </div>
+            <div class="section searchField">
+                <form action="/search" method="GET">
+                    <input type="text" name="query" placeholder="All Categories.." spellcheck="false" data-ms-editor="true">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </header>
+
+        <div class="mobile--Hero">
+            <h1>For who you'll become this year</h1>
+            <p>You're only  young once. Make the most of it with designs by independent artists</p>
+            <button class="primary special">Shop Essentials</button>
+        </div>
+
+        <div class="mobile--productSection ShopProductRange">
+            <h2>Shop Product Range</h2>
+            <div class="productCatalogue gridSystem overflow">
+                <div class="productItemContainer">
+                </div>
+
+            </div>
+        </div>
+        <div class="mobileProductGridDisplay--mansonryStyle">
+            <!--Put products to show on mobile devices here-->
+        </div>
     </div>
+    <!--ALL NECESSARY MOBILE ELEMENTS ENDS HERE-->
 
     <div class="section advert">
         <div>
