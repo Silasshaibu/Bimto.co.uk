@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="checkout.css">
 </head>
+
 <form action="/" method="POST"> <!--FormUrl and method-->
     <div class="section checkout"><h2>CHECKOUT</h2></div>
     <div class="section checkout form">
         <div class="form-sec first">
             <h6>PERSONAL DETAILS</h6>
-            <div class="emptySpace one"> 
+            <div class="emptySpace one">
                 <label for="firstname">First name
                     <input type="text" name="FirstName" placeholder="John" id="FirstName">
-                </label>           
-                
+                </label>
+
                 <label for="lastname">Last name
                     <input type="text" name="LastName" placeholder="Hammond" id="cardHoldersName">
                 </label>
@@ -38,35 +39,35 @@
                     <div class="input-container">
                     <img src="./Assets/Images/dhl.jpg" alt="ShipMethod"  height="30px">
                     <input type="radio" name="ShipMethod1" placeholder="DHL" id="FirstName">
-                    </div>                    
+                    </div>
                 </label>
 
                 <label>
-                    <div class="input-container">                        
+                    <div class="input-container">
                     <img src="./Assets/Images/UPS-logo-trans.jpg" alt="ShipMethod" height="30px">
                     <input type="radio" name="ShipMethod1" placeholder="DHL" id="FirstName">
-                    </div>                    
+                    </div>
                 </label>
 
                 <label>
                     <div class="input-container">
                     <img src="./Assets/Images/fedex-transparent.jpg" alt="ShipMethod" height="30px">
                     <input type="radio" name="ShipMethod1" placeholder="DHL" id="FirstName">
-                    </div>                    
+                    </div>
                 </label>
 
                 <label>
                     <div class="input-container">
                     <img src="./Assets/Images/box.jpg" alt="ShipMethod" height="30px">
                     <input type="radio" name="ShipMethod1" placeholder="DHL" id="FirstName">
-                    </div>                    
+                    </div>
                 </label>
                 <p><span class="addBillAdd"> + Add different billing address</span> </p>
             </div>
         </div>
         <div class="form-sec first">
             <h6>PAYMENT METHOD</h6>
-            <div class="emptySpace three">                
+            <div class="emptySpace three">
                     <input type="number" name="CARD NUMBER" placeholder="CARD NUMBER" id="cardNum">
                     <select type="radio" name="" id="">
                         <option value="paypal"><svg src="./Assets/Images/Paypal.jpg"></svg>PAYPAL</option>
@@ -74,7 +75,7 @@
                         <option value="stripe">VISA</option>
                         <option value="stripe">MASTERCARD</option>
                     </select>
-                    
+
                     <input type="text" name="CARDHOLDER'S NAME" placeholder="CARDHOLDER'S NAME" id="cardHoldersName">
                     <div class="selects-three">
                         <select name="month" id="monthSelect">
@@ -93,13 +94,16 @@
                          <input type="checkbox"><span class="saveCredCardInfo">Save credit card information</span>
                     </div>
                     <div class="lastSec">
-                        <button class="paynow">PAYNOW</button>                        
+                        <button class="paynow">PAYNOW</button>
                     </div>
-                    
-            </div>            
+
+            </div>
         </div>
-    </div>  
-</form>  
+    </div>
+</form>
+
+<footer-component></footer-component>
 </body>
+<script src="./templateElements/footer-component.js" type="module"></script>
 <script src="checkout.js"></script>
 </html>
