@@ -1,4 +1,4 @@
-    .hero{        
+    .hero{
         height:400px;
         background-color: #efefef;
         position: relative;
@@ -7,7 +7,66 @@
         background-size: cover;
         background-image: url(./Assets/Images/3D-hero-image.jpg); /*Insert Background Image*/
         margin-bottom:var(--distancing);
-    }    
+    }
+
+
+    ul.header-switch{
+        width:8ch;
+        list-style: none;
+        position: relative;
+    }
+
+
+    ul.header-switch div{
+        margin:0;
+        padding:0;
+        position: absolute;
+        top:2rem;
+        border-radius: 5rem !important;
+    }
+
+    .nested-li{
+        display:none;
+    }
+
+    .nested-li.active{
+        display: grid;
+        border:1px solid black;
+    }
+
+    ul.header-switch li{
+        background-color: #efefef;
+        line-height: 1rem;
+        padding:.5rem;
+        width:8ch;
+        cursor:pointer;
+    }
+
+    .caret.active{
+        transform: rotate(-180deg)translateY(-.2rem);
+    }
+
+    .caret{
+        transform: translateY(.25rem);
+        transition:transform 300ms;
+    }
+
+    ul.header-switch li:hover{
+        background-color: #bbbaba;
+        line-height: 1rem;
+        padding:.5rem;
+        width:8ch;
+        cursor:pointer;
+    }
+
+    .icons--default--state{
+        width:1rem;
+        height:1rem;
+    }
+
+    .mobileHeader{
+        display: none ;
+    }
 
     body{
         font-family: 'proxima nova', 'poppins', helvetica, sans-serif;
@@ -30,7 +89,7 @@
     }
 
     .hero .searchBox-hero{
-        min-height:50px; 
+        min-height:50px;
         position: absolute;
         width:100%;
         bottom:15%;
@@ -51,7 +110,7 @@
         transform: translate(-50%, 75%);
         background-color: rgba(128, 0, 128, 0.5);
         display: flex;
-        height: var(--distancing); 
+        height: var(--distancing);
     }
 
     .featProd{
@@ -100,7 +159,7 @@
 
     .featProd:nth-child(3){
         background:rgb(190, 190, 190);
-        
+
     }
 
     .featProd:nth-child(3) div{
@@ -136,21 +195,68 @@
     header{
         display:flex;
         flex-direction: column;
-        align-items: center;  
-        font-size:12px;  
+        align-items: center;
+        font-size:.8rem;
         }
-header div
-    {
-        padding: .5rem 5%;
-    }
+
+    header div{
+            padding: .5rem 5%;
+        }
 
     .head.layer1{
         display:flex;
         width:100%;
         justify-content: space-between;
-        padding:5px 15%;
+        padding:.5rem 15%;
         border-bottom:1px solid #efefef;
     }
+
+    ul.header-switch{
+        display: block;
+        position: relative;
+    }
+
+    ul.header-switch div{
+        position: absolute;
+        display: block;
+    }
+
+    .head.layer1 .right{
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        padding:0;
+        column-gap: 1rem;
+        align-items: center;
+    }
+
+    .currencyState{
+        padding:0;
+        margin:0;
+    }
+
+    .numOfItems{
+        background-color: orangered;
+        display: grid;
+        place-items: center;
+        height:1.2rem;aspect-ratio: 1/1;
+        color: white;
+        border-radius:50%;
+    }
+
+    .right p{
+        cursor: pointer;
+        display:flex;
+        justify-content: space-around;
+        text-align: center;
+        height:1.5rem;
+        align-items: center;
+        /* border:1px solid black; */
+    }
+
+    .right p img{
+        cursor: default;
+    }
+
 
     header div:nth-child(3){
         width:100%;
@@ -163,7 +269,7 @@ header div
 
     .head.layer3 nav{
         width:100%;
-        padding:0 10%; 
+        padding:0 10%;
         /* justify-content: space-evenly;        */
     }
 
@@ -173,17 +279,17 @@ header div
         line-height: 2rem;
     }
 
-   
+
     .head.layer3 a:active{
         font-weight: 700;
         color:var(--bimtoBlue);
-        border-bottom:3px solid var(--bimtoBlue); 
+        border-bottom:3px solid var(--bimtoBlue);
     }
 
     .head.head.layer3 a:hover{
         color:var(--bimtoBlue);
     }
-    
+
     header .head.layer3{
         padding-top:0px;
         padding-bottom:1rem;
@@ -196,13 +302,13 @@ header div
     .head.layer3 ul{
         display: flex;
         justify-content: space-between;
-        list-style: none;        
+        list-style: none;
     }
-    
+
     .head.layer3 ul a{
         color:black;
         text-decoration: none;
-    }  
+    }
 
     .section nav{
         display: flex;
@@ -213,21 +319,21 @@ header div
     }
 
     .section nav li{
-        color: rgb(78, 78, 78);        
+        color: rgb(78, 78, 78);
         padding-bottom:5px;
-        cursor:pointer; 
-        height:1.5rem;       
+        cursor:pointer;
+        height:1.5rem;
     }
-  
+
     .topCat.prodContainer{
         padding:1.5rem 20%;
         justify-content: space-between;
-        display:grid;        
+        display:grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 200px 200px;
         gap:15px;
         padding-bottom:5%;
-    }       
+    }
 
     div.imageProductInfoCont{
         border:1px solid #efefef;
@@ -242,7 +348,7 @@ header div
         color:var(--bimtoBlue);
         border-bottom:4px solid var(--bimtoBlue);
     }
-   
+
     .section.topCategories h3{
         padding:25px 0px;
         padding-bottom:10px;
@@ -262,7 +368,7 @@ header div
         padding:10px;
         overflow:hidden;
         height:100px;
-        min-height:100px;        
+        min-height:100px;
     }
 
     .productNameBox h6{
@@ -291,7 +397,7 @@ header div
         align-self: center;
         padding-left:20%;
     }
-    
+
     .section.advert div.ImageContainer{
         width:60%;
         position: absolute;
@@ -342,7 +448,7 @@ header div
         width:100%;
     }
 
-    .section.policy div:last-child{        
+    .section.policy div:last-child{
         padding-right:0rem;
     }
 
@@ -356,13 +462,13 @@ header div
     }
 
     .section.searchField{
-        padding:40px 20%;      
+        padding:40px 20%;
         text-align:center;
     }
 
     .section.policy img{
         min-height:50px;
-        height:50px;        
+        height:50px;
     }
 
     .section.searchField form input{
@@ -382,7 +488,7 @@ header div
         margin:-4px;
         border-right:none;
         padding:15px 15px;
-    }   
+    }
 
     .section.searchField form button{
         border:1px solid rgb(24, 151, 224);
@@ -444,9 +550,13 @@ header div
     }
 
     /* TABLET DEVICES */
-    @media (max-width:1024px){        
+    @media (max-width:1024px){
         .hero .featuredProducts{
-            width:90%;        
+            width:90%;
+        }
+
+        .head.layer1{
+            padding:1rem 5%;
         }
 
         .section nav{
@@ -478,21 +588,98 @@ header div
             width:40%;
             padding-left:10%;
         }
-        
+
         header div:nth-child(3){
             padding:0 5%;
         }
 
         .section.searchField{
             padding:2rem 10%;
-        }       
-       
+        }
+
     }
 
     /* MOBILE DEVICES */
     @media (max-width:768px){
         body{
-            
+
+        }
+
+        .mainHeader{
+            display: none;
+        }
+
+        header div:nth-child(1){
+            display: flex;
+        }
+
+        .icons--default--state.mobile{
+            width:30px;
+            height:30px;
+            cursor:pointer;
+        }
+
+        .mobileLayer1 .left, .mobileLayer1 .right{
+            width:20%;
+            display: grid;
+            align-items: center;
+            padding:0;
+            margin:0;
+        }
+
+        .mobileLayer1 .right{
+            justify-items: flex-end;
+            /* border:1px solid black; */
+        }
+
+        .right img{
+            padding:2px;
+            position: relative;
+        }
+
+        img.shopBag{
+            /* border:1px solid black; */
+            position: relative;
+            background-color: transparent;
+        }
+
+        .right{
+            position: relative;
+        }
+
+
+        .right span.numOfItems{
+            position: absolute;
+            top:5px;
+            right:15px;
+        }
+
+
+        .mobileLayer1 *{
+            /* border:1px solid  black; */
+        }
+
+        .mobileLayer1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* align-items: center; */
+        }
+
+        .bannerAdvertSection{
+            background-color: #efefef;
+            min-height: 1.5rem;
+        }
+
+        .mobileLogoSection{
+            display: grid;
+            place-items: center;
+        }
+
+
+
+        .mobileHeader{
+            display: block;
         }
 
         .section.policy{
@@ -511,7 +698,7 @@ header div
         }
 
         .section.searchField{
-            padding:2rem 0;
+            padding:1rem 0;
         }
 
         .foot.layer1, .foot.layer2{
@@ -544,10 +731,10 @@ header div
     }
 
 
-    
 
 
 
-    
+
+
 
 
