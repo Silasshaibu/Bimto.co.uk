@@ -235,25 +235,43 @@
 
     .miniSearchField.active {
         display:block;
-        padding:0;
+        padding: 0%;
         width:100%;
         position: absolute;
         right:0;
+        border:none;
         bottom:-3.5rem;
+        background-color: #efefef;
+        border-radius: .2rem;
     }
 
     .miniSearchField {
        display:none;
     }
 
-    .miniSearchField form input{
-        width:70%;
+    .miniSearchField form{
+        display: flex;
+    }
+
+    .miniSearchField form input,  .miniSearchField form button{
         padding:.5rem;
     }
 
+    .miniSearchField form input{
+        width:75%;
+        outline:1px;
+        border-right:none;
+        border-color: #efefef;
+        border-radius: .2rem 0rem 0rem .2rem;
+    }
+
     .miniSearchField form button{
-        width:29%;
-        padding:.5rem;
+        width:25%;
+        background-color: rgb(58, 58, 58) ;
+        color:white;
+        border-radius:  0rem .2rem .2rem 0rem;
+        border-left:none;
+        cursor:pointer;
     }
 
     .currencyState{
