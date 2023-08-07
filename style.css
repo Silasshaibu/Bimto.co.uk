@@ -9,10 +9,6 @@
         margin-bottom:var(--distancing);
     }
 
-    p img.searchIcon{
-        cursor: pointer;
-    }
-
     ul.header-switch{
         width:8ch;
         list-style: none;
@@ -234,6 +230,30 @@
         padding:0;
         column-gap: 1rem;
         align-items: center;
+        position: relative;
+    }
+
+    .miniSearchField.active {
+        display:block;
+        padding:0;
+        width:100%;
+        position: absolute;
+        right:0;
+        bottom:-3.5rem;
+    }
+
+    .miniSearchField {
+       display:none;
+    }
+
+    .miniSearchField form input{
+        width:70%;
+        padding:.5rem;
+    }
+
+    .miniSearchField form button{
+        width:29%;
+        padding:.5rem;
     }
 
     .currencyState{
@@ -264,10 +284,9 @@
         cursor: default;
     }
 
-    img.searchIcon{
+    p img.searchIcon{
         cursor: pointer;
     }
-
 
     header div:nth-child(3){
         width:100%;
