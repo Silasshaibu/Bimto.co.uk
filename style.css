@@ -685,10 +685,24 @@
             background-color: rgba(211, 144, 155, 0.925);
             position: absolute;
             border:1px solid black;
-            height: 100vh;
             width:50% !important;
             top:0;
             left:0;
+        }
+
+        .rightCaretArrow--forMobileMenu{
+            position: absolute;
+            background-image: url(./Assets/svgs/rightarrowCaret.svg);
+            transform:translateY(-50%);
+            display:grid;
+            place-items: center;
+            right:8%;
+            border-radius:50%;
+            top:50%;
+            aspect-ratio: 1/1;
+            min-width:1.5rem;
+            z-index:5;
+
         }
 
         .slide{
@@ -696,6 +710,8 @@
             padding: 1rem 0px;
             grid-template-columns: 1fr;
             grid-template-rows: auto;
+            overflow:auto;
+            height:100vh;
         }
 
         .slide .layer1, .slide .layer2{
@@ -713,6 +729,9 @@
         .slide .layer2 li{
             padding:1rem;
             border-bottom:1px solid #efefef;
+            display: flex;
+            align-items: center;
+            position: relative;
         }
 
         .slide .layer2 img{

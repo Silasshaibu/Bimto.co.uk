@@ -19,6 +19,17 @@ document.addEventListener('click', (event)=>{
 });
 
 
+//add this class to every
+const slideImgs = document.querySelectorAll('.slide li');
+slideImgs.forEach(item=>{
+    const carretArrowBox = document.createElement('div');
+    carretArrowBox.classList.add('rightCaretArrow--forMobileMenu');
+    item.appendChild(carretArrowBox);
+    console.log(item);
+})
+
+
+
 
 // const headerSwitchs = document.querySelectorAll('.header-switch');
 // //if any of this toggle option is active, then the other should be deactivated
