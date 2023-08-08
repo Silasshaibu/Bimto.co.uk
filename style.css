@@ -734,6 +734,10 @@
             position: relative;
         }
 
+        .slide.next{
+            right:0;
+        }
+
         .slide .layer2 img{
             border-radius:.5rem;
             border: none;
