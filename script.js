@@ -25,8 +25,24 @@ slideImgs.forEach(item=>{
     const carretArrowBox = document.createElement('div');
     carretArrowBox.classList.add('rightCaretArrow--forMobileMenu');
     item.appendChild(carretArrowBox);
-    console.log(item);
 })
+
+//if mobile menu card has last child
+
+const mobileMenuSection = document.querySelector('.mobileMenuSection');
+if (mobileMenuSection.hasChildNodes){
+    let lastSlide = mobileMenuSection.childElementCount - 1;
+    const lastSlideCard = mobileMenuSection.children[lastSlide];
+    //if the last slid card exists, then find the rightCarteArrow inside it and hide them using the css selector.
+    if (lastSlideCard){
+        let caretSections = lastSlideCard.querySelectorAll('.rightCaretArrow--forMobileMenu');
+        caretSections.forEach(caretSection=>{
+            caretSection.style.display = 'none';
+        })
+    }
+}
+
+
 
 
 
