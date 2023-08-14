@@ -28,16 +28,25 @@
 
     .nested-li.active{
         display: grid;
-        border:1px solid black;
+        border-radius: 1rem;
     }
 
     ul.header-switch li{
         background-color: #efefef;
-        background-color: transparent;
         line-height: 1rem;
         padding:.5rem;
         width:8ch;
         cursor:pointer;
+        border-bottom:1px solid rgb(192, 192, 192);
+    }
+
+    ul.header-switch li:first-child{
+        border-radius: 2px 2px 0px 0px;
+    }
+
+    ul.header-switch li:last-child{
+        border-bottom:none;
+        border-radius: 0px 0px 2px 2px;
     }
 
     .caret.active{
@@ -725,6 +734,8 @@
             background-color: white;
             padding:0rem;
         }
+
+
 
         .slide .layer2 li{
             padding:1rem;

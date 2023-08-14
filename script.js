@@ -30,11 +30,23 @@ let headerSwitchers = document.querySelectorAll('.header-switch');
         let svg = langSwitcher.querySelector('svg');
         svg.classList.add('active');
         dropDown.classList.add('active');
-        console.log(currencySwitcher.children[1]);
         if((currencySwitcher.children[1]).classList.contains('active')){
             currencySwitcher.children[1].classList.remove('active');
             currencySwitcher.children[0].classList.remove('active');
         };
+        if(dropDown.classList.contains('active')){
+            dropDown.addEventListener('click', (event)=>{
+                let selectedLang = event.target.textContent;
+                const textContentLanguage = langSwitcher.querySelector('ul');
+                console.log(langSwitcher.childNodes[0].textContent);
+                console.log(textContentLanguage.parentNode);
+                // let currentLang = langSwitcher.childNodes[0].textContent;
+                // currentLang = selectedLang;
+                // let currentLange = langSwitcher;
+                // currentLang.textContent = 'help';
+
+            })
+        }
     }
 
     function toggleCurrencySwitcher(){
