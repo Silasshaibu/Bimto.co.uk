@@ -17,20 +17,24 @@ categories.forEach(category =>{
             categoryName.textContent = category.name;
 
     const   productList = document.createElement("ul");
+
+
+    categoryContainer.appendChild(categoryElement);
+    categoryElement.appendChild(categoryName);
+
+
     category.products.forEach(product => {
         const productItem = document.createElement("li");
         productItem.textContent = product;
-        productList.appendChild = productItem;
+        productList.appendChild = productItem.outerHTML;
 
-        console.log(product);
+        categoryElement.appendChild(productItem);
     });
 
-    categoryElement.appendChild(categoryName);
-    categoryContainer.appendChild(categoryElement);
-    categoryElement.appendChild(productList);
-
-
 });
+
+
+console.log(categoryContainer);
 
 
 
