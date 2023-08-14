@@ -2,6 +2,7 @@
 //Header interface on user Logged In state
 //change the default text from log in to profile
 
+//SearchIcon on desktop and tablet header  section functionality
 const searchField = document.querySelector('.miniSearchField');
 const searchIcon = document.querySelector('.searchIcon');
 const body = document.querySelector('body');
@@ -18,8 +19,74 @@ document.addEventListener('click', (event)=>{
     }
 });
 
+//Language and Currency switcher functionality
+let currencySwitcher = document.querySelector('.currencySwitcher');
+let langSwitcher = document.querySelector('.langSwitcher');
+let headerSwitchers = document.querySelectorAll('.header-switch');
 
-//add this class to every
+    function toggleLanguageSwitcher(){
+        langSwitcher = document.querySelector('.langSwitcher')
+        dropDown = langSwitcher.querySelector('div');
+        let svg = langSwitcher.querySelector('svg');
+        svg.classList.add('active');
+        dropDown.classList.add('active');
+        console.log(currencySwitcher.children[1]);
+        if((currencySwitcher.children[1]).classList.contains('active')){
+            currencySwitcher.children[1].classList.remove('active');
+            currencySwitcher.children[0].classList.remove('active');
+        };
+    }
+
+    function toggleCurrencySwitcher(){
+        currencySwitcher = document.querySelector('.currencySwitcher')
+        dropDown = currencySwitcher.querySelector('div');
+        let svg = currencySwitcher.querySelector('svg');
+        svg.classList.add('active');
+        dropDown.classList.add('active');
+        if((langSwitcher.children[1]).classList.contains('active')){
+            langSwitcher.children[1].classList.remove('active');
+            langSwitcher.children[0].classList.remove('active');
+        };
+    }
+
+    document.addEventListener('click', (event)=>{
+        if((langSwitcher).contains(event.target)){
+        }else{
+            langSwitcher.children[1].classList.remove('active');
+            langSwitcher.children[0].classList.remove('active');
+        }
+
+        if((currencySwitcher).contains(event.target)){
+        }else{
+           currencySwitcher.children[1].classList.remove('active');
+           currencySwitcher.children[0].classList.remove('active');
+        }
+    })
+
+//end of switchers functionality
+
+
+// const headerSwitchers  = document.querySelectorAll('.header-switch');
+// headerSwitchers.forEach(headerSwitcher=>{
+//     headerSwitcher.addEventListener('click', (e)=>{
+//         let svg = headerSwitcher.querySelector('svg');
+//         console.log(svg);
+//         svg.classList.toggle('active');
+//         if (e.target){
+//             e.target.classList.toggle('active');
+//             headerSwitcher.classList.remove('active');
+//             let dropDown = e.target.querySelector('.nested-li');
+//             dropDown.classList.toggle('active');
+//         }
+//     })
+// })
+
+
+
+
+
+
+//add this caret right arrow to every li in mobile menu
 const slideImgs = document.querySelectorAll('.slide li');
 slideImgs.forEach(item=>{
     const carretArrowBox = document.createElement('div');
@@ -27,8 +94,8 @@ slideImgs.forEach(item=>{
     item.appendChild(carretArrowBox);
 })
 
-//if mobile menu card has last child
 
+//if mobile menu card has last child, remove caret arrow from the last child card
 const mobileMenuSection = document.querySelector('.mobileMenuSection');
 if (mobileMenuSection.hasChildNodes){
     let lastSlide = mobileMenuSection.childElementCount - 1;
