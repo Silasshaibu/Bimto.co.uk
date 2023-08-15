@@ -66,6 +66,8 @@
         gap:1rem;
         padding:0;
         background-color: #efefef;
+        height:200px;
+        max-height:300px;
     }
 
     .headerNav .dropDown{
@@ -128,7 +130,6 @@
         width:100%;
         bottom:15%;
         left:50%;
-        z-index:5;
         transform:translateX(-50%);
     }
 
