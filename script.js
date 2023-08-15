@@ -15,13 +15,35 @@
 //
 
 
-let NavMenuBar = document.querySelector('.header-unorderedList');
 
-function showDropDown(){
+let dropdown = document.querySelector('.dropDown');
+function activateCurrentMenu(){
+    let NavMenuBar = document.querySelector('.header-unorderedList');
 
+
+    for (i=0; i<NavMenuBar.children.length; i++){
+    NavMenuBar.children[i].classList.remove('active');
+    }
+
+    NavMenuBar.addEventListener('click', (e)=>{
+        e.stopPropagation();
+        if(e.target){
+            e.target.classList.add('active');
+            dropdown.classList.add('active');
+        }
+    })
+
+    document.addEventListener('click', (event)=>{
+
+        if(dropdown.contains(event.target)){
+        }else{
+            dropdown.classList.remove('active');
+            for (i=0; i<NavMenuBar.children.length; i++){
+                NavMenuBar.children[i].classList.remove('active');
+                }
+        }
+    });
 }
-
-console.log('NavMenuBar')
 
 
 
