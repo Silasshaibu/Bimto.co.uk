@@ -63,11 +63,19 @@
     .gridSystem-PCategory{
         display: grid;
         grid-template-columns: repeat(3, auto);
-        gap:1rem;
-        padding:0;
         background-color: #efefef;
         height:200px;
+        position: relative;
         max-height:300px;
+        width: 100%;
+        justify-content: space-evenly;
+        /* overflow: hidden; */
+    }
+
+    .gridSystem-PCategory div{
+        margin:0;
+        padding:0;
+        border:1px solid black;
     }
 
     .headerNav .dropDown{
@@ -111,8 +119,6 @@
     body{
         font-family: 'proxima nova', 'poppins', helvetica, sans-serif;
     }
-
-
 
     .socials-iconSvg{
         width:50px;
