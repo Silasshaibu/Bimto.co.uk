@@ -2,6 +2,20 @@
 //Header interface on user Logged In state
 //change the default text from log in to profile
 
+
+//Replace the menuitem on the top with the product categories in the const area js
+//put this list item in an array
+//map each list to the category products
+
+//filter each in top category section
+
+
+
+
+
+
+
+
 //SearchIcon on desktop and tablet header  section functionality
 const searchField = document.querySelector('.miniSearchField');
 const searchIcon = document.querySelector('.searchIcon');
@@ -77,27 +91,6 @@ let headerSwitchers = document.querySelectorAll('.header-switch');
 
 //end of switchers functionality
 
-
-// const headerSwitchers  = document.querySelectorAll('.header-switch');
-// headerSwitchers.forEach(headerSwitcher=>{
-//     headerSwitcher.addEventListener('click', (e)=>{
-//         let svg = headerSwitcher.querySelector('svg');
-//         console.log(svg);
-//         svg.classList.toggle('active');
-//         if (e.target){
-//             e.target.classList.toggle('active');
-//             headerSwitcher.classList.remove('active');
-//             let dropDown = e.target.querySelector('.nested-li');
-//             dropDown.classList.toggle('active');
-//         }
-//     })
-// })
-
-
-
-
-
-
 //add this caret right arrow to every li in mobile menu
 const slideImgs = document.querySelectorAll('.slide li');
 slideImgs.forEach(item=>{
@@ -120,22 +113,4 @@ if (mobileMenuSection.hasChildNodes){
         })
     }
 }
-
-
-
-
-
-
-// const headerSwitchs = document.querySelectorAll('.header-switch');
-// //if any of this toggle option is active, then the other should be deactivated
-// function toggleLang(){
-//     headerSwitchs.forEach((item)=>{
-//         const caretDownArrow = item.querySelector('svg');
-//         const dropDownMenu = item.querySelector('.nested-li');
-//         caretDownArrow.classList.toggle('active');
-//         console.log(dropDownMenu);
-//         dropDownMenu.classList.toggle('active');
-//     })
-// }
-// const dropDownMenu = document.querySelector('.nested-li');
 

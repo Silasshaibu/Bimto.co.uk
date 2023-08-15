@@ -1,3 +1,8 @@
+:root{
+    --distancing:250px;
+    --bimtoBlue: rgb(24, 151, 224);
+}
+
     .hero{
         height:400px;
         background-color: #efefef;
@@ -49,6 +54,32 @@
         border-radius: 0px 0px 2px 2px;
     }
 
+    .headerNav{
+        position: relative;
+        z-index: 1;
+        margin: 0;
+    }
+
+    .gridSystem-PCategory{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap:1rem;
+        padding:0;
+        background-color: #efefef;
+    }
+
+    .headerNav .dropDown{
+        padding:.5rem;
+        position: absolute;
+        background-color: rgb(255, 253, 253);
+        width: 100%;
+        font-size: 1rem;
+        left:0;
+        transform:translateY(10px);
+        border-radius: .2rem;
+        border:.5px solid #efefef;
+    }
+
     .caret.active{
         transform: rotate(-180deg)translateY(-.2rem);
     }
@@ -79,10 +110,7 @@
         font-family: 'proxima nova', 'poppins', helvetica, sans-serif;
     }
 
-    :root{
-        --distancing:250px;
-        --bimtoBlue: rgb(24, 151, 224);
-    }
+
 
     .socials-iconSvg{
         width:50px;
@@ -365,6 +393,20 @@
     .head.layer3 ul a{
         color:black;
         text-decoration: none;
+    }
+
+    .header-unorderedList li{
+        padding:.5rem 0;
+        cursor:pointer;
+    }
+
+    .header-unorderedList li.active{
+        color:var(--bimtoBlue);
+        border-bottom:3px solid var(--bimtoBlue);
+    }
+
+    .header-unorderedList li:hover{
+        color:var(--bimtoBlue);
     }
 
     .section nav{
