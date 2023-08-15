@@ -60,32 +60,89 @@
         margin: 0;
     }
 
-    .gridSystemContainer{
-        position: relative;
-        border:1px solid black;
-        padding:1rem;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .dropDownMenu-InnerSectionLayout div{
-        flex:1;
-        display: flex;
-        border:1px solid red;
-        flex-direction: column;
-    }
-
     .headerNav .dropDown{
-        padding:0rem;
+        padding:.5rem;
         position: absolute;
         background-color: rgb(255, 253, 253);
         font-size: 1rem;
         width:100%;
         left:0;
-        transform:translateY(10px);
         border-radius: .2rem;
         border:.5px solid #efefef;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     }
+
+    .gridSystemContainer{
+        padding:0rem !important;
+        position: relative;
+        width:100%;
+        display: grid !important;
+    }
+
+    section.InnerSectionLayout{
+        padding:.5rem;
+        padding-bottom:2rem;
+        display: grid;
+        gap:.5rem;
+        grid-template-columns: 1fr 1fr auto;
+    }
+
+    .MenuCard{
+        line-height: 2rem;
+        padding: 0rem 1.2rem;
+    }
+
+    .MenuCard:not(:first-child){
+        padding-left:1rem;
+    }
+
+    .MenuCard:last-child *{
+        border-right:none;
+    }
+
+    .MenuCard p{
+        font-weight: 600;
+        color: grey;
+        cursor:default;
+        border-right:1px dashed #efefef;
+    }
+
+    .MenuCard ul{
+        border-right:1px dashed #efefef;
+        max-height: 7rem !important;
+    }
+
+    .MenuCard ul li{
+        cursor:pointer;
+    }
+
+    /*if a new product is added to a category use this seletors below*/
+    span.newProduct.show{
+        background-color: rgb(148, 5, 148);
+        font-size: .8rem;
+        padding:.5px 10px;
+        color:white;
+        border-radius:.5rem;
+        display:inline-block;
+    }
+
+    span.newProduct.hide{
+        display:none
+    }
+    /*if a new product is added to a category use this seletors above*/
+
+    /* .MenuCard ul a:hover{
+        cursor:pointer;
+        padding:2px;
+    } */
+
+    section.InnerSectionLayout ul{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+
 
     .caret.active{
         transform: rotate(-180deg)translateY(-.2rem);
@@ -208,8 +265,6 @@
         width:60%;
     }
 
-
-
     /*FORMATING DEFAULT STYLE*/
     *{
         box-sizing: border-box;
@@ -237,7 +292,7 @@
         font-size:.8rem;
         }
 
-    header div{
+    header div.head{
             padding: .5rem 5%;
         }
 
@@ -347,17 +402,12 @@
         cursor: pointer;
     }
 
-    header div:nth-child(3){
-        width:100%;
-        padding:0% 20%;
-    }
 
     header .head.layer2{
         padding: 1.5rem 0px;
     }
 
     .head.layer3 nav{
-        width:100%;
         padding:0 10%;
         /* justify-content: space-evenly;        */
     }
@@ -375,16 +425,16 @@
         border-bottom:3px solid var(--bimtoBlue);
     }
 
-    .head.head.layer3 a:hover{
+    .head.layer3 a:hover{
         color:var(--bimtoBlue);
     }
 
-    header .head.layer3{
+    .head.layer3{
         padding-top:0px;
         padding-bottom:1rem;
     }
 
-    header div:nth-child(1){
+    .head.layer1 div:nth-child(1){
         display: flex;
     }
 
@@ -676,11 +726,18 @@
         display: none;
     }
 
+    .head.layer3{
+        padding:0%;
+        width:60%;
+    }
+
     /* TABLET DEVICES */
     @media (max-width:1024px){
         .hero .featuredProducts{
             width:90%;
         }
+
+
 
         .head.layer1{
             padding:1rem 5%;
@@ -716,9 +773,11 @@
             padding-left:10%;
         }
 
-        header div:nth-child(3){
+        .head.layer3{
             padding:0 5%;
+            width:100%;
         }
+
 
         .section.searchField{
             padding:2rem 10%;

@@ -13,7 +13,7 @@
     </div>
     <header class="mainHeader">
        <div class="head layer1">
-            <div>
+            <div >
                 <ul onclick="toggleLanguageSwitcher()" class="header-switch langSwitcher">EN
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icons--default--state caret">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
@@ -55,42 +55,52 @@
         <div class="head layer2">
             <img src="./Assets/Images/bimto-logo-web.png" alt="BIMTO" width="100px" height="fit-content"/>
         </div>
+
         <div class="head layer3">
             <nav class="headerNav">
-                <ul class="header-unorderedList">
-                    <li class="active">HOME</li>
-                    <li>GADGET</li>
-                    <li>KITCHEN</li>
-                    <li>AROUND THE HOME</li>
-                    <li>LIFEHACKS</li>
-                    <li>LIVING ROOM</li>
-                </ul>
+            <ul class="header-unorderedList">
+                <li onclick="showDropDown()" class="active">HOME</li>
+                <li>GADGET</li>
+                <li>KITCHEN</li>
+                <li>AROUND THE HOME</li>
+                <li>LIFEHACKS</li>
+                <li>LIVING ROOM</li>
+            </ul>
 
-                <!-- DROPDOWN FOR HEADER NAV MENU BELOW-->
-                <div class="dropDown">
-                    <div class="gridSystemContainer">
-                        <section class="dropDownMenu-InnerSectionLayout">
-                            <div><p>BACK TO SCHOOL</p>
-                                <ul>
-                                    <li>Sharpener</li>
-                                    <li>Color-Set Case</li>
-                                    <li>Bags, Shells & Sleeves</li>
-                                    <li>Lead Holder</li>
-                                    <li>Book Holder</li>
-                                </ul>
-                            </div>
+            <!-- DROPDOWN FOR HEADER NAV MENU BELOW-->
+            <div class="dropDown">
+            <div class="gridSystemContainer">
+            <section class="InnerSectionLayout">
+                <div class="MenuCard"><p>BACK TO SCHOOL </p>
+                    <ul>
+                    <li><a href="#">Sharpener  &emsp14; <span class="newProduct hide">NEW</span></a></li>
+                    <li><a href="#">Color-Set Case</a></li>
+                    <li>Bags, Shells & Sleeves</li>
+                    <li>Lead Holder</li>
+                    <li>Book Holder</li>
+                    </ul>
+                </div>
 
-                            <div><p>BACK TO SCHOOL</p>
-                                <ul>
-                                    <li>Sharpener</li>
-                                    <li>Color-Set Case</li>
-                                    <li>Bags, Shells & Sleeves</li>
-                                    <li>Lead Holder</li>
-                                    <li>Book Holder</li>
-                                </ul>
-                            </div>
-                        </section>
-                    </div>
+                <div class="MenuCard"><p>3D-PRINTS</p>
+                    <ul>
+                    <li>Soap case</li>
+                    <li>Simple roller</li>
+                    <li>Vase case</li>
+                    <li>Quest creature</li>
+                    <li>3D Text</li>
+                    </ul>
+                </div>
+
+                <div class="MenuCard"><p>BATHROOM</p>
+                    <ul>
+                    <li>Sink knob</li>
+                    <li>Vortex shower head</li>
+                    <li>Toothpaste squeezer</li>
+
+                    </ul>
+                </div>
+            </section>
+                </div>
                 </div>
             </nav>
         </div>

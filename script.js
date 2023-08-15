@@ -9,6 +9,19 @@
 
 //filter each in top category section
 
+//create a function such that on
+//click on any of the function show
+//the drop down menu and active the state of the current li
+//
+
+
+let NavMenuBar = document.querySelector('.header-unorderedList');
+
+function showDropDown(){
+
+}
+
+console.log('NavMenuBar')
 
 
 
