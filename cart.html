@@ -9,12 +9,22 @@
     <link rel="stylesheet" href="cart.css">
 </head>
 <body>
-    <div class="section cart layer1" >
+    <div class="cart layer1" >
         <div class="top">
             <!-- ProductImageVariationSamples -->
             <div class="imagesProductShow">
-                <div class="MainImage">MainImage</div>
+                <div class="MainImage"><img src="./Assets/Images/12.jpg" alt="Image1" width="100%" height="fit-content"></div>
                 <div class="OtherImages">
+                    <div class="miniImageContainer">
+                        <img src="./Assets/Images/12.jpg" alt="Image1" width="100%" height="fit-content">
+                    </div>
+                    <div class="miniImageContainer">
+                        <img src="./Assets/Images/12.jpg" alt="Image1" width="100%" height="fit-content"></div>
+                    <div class="miniImageContainer">
+                        <img  src="./Assets/Images/12.jpg" alt="Image1" width="100%" height="fit-content"></div>
+                    <div class="miniImageContainer">
+                        <img src="./Assets/Images/12.jpg" alt="Image1" width="100%" height="fit-content">
+                    </div>
                 </div>
             </div>
             <!-- ProductShortInformation -->
@@ -61,58 +71,29 @@
                     <button class="Twitter">Share on Twitter</button>
                 </div>
             </div>
-
         </div>
-        <div class="bottom productTabSection">
-            <nav class="productTab Nav">
-                <ul>
-                    <li>Product Information</li>
-                    <li>Reviews 0</li>
-                    <li>Another tab</li>
-                </ul>
-            </nav>
-            <div class="content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, ratione, ipsa vel debitis architecto quaerat delectus harum reprehenderit veritatis dolore sint officia exercitationem. Est saepe sed debitis cupiditate vitae natus?
-            </div>
+
+        <div class="productTabSection">
+            <ul class="productTabs">
+                <li class="active">Product Information</li>
+                <li>Reviews &emsp14; 0</li>
+                <li>Another tab</li>
+            </ul>
+        <div class="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, ratione, ipsa vel debitis architecto quaerat delectus harum reprehenderit veritatis dolore sint officia exercitationem. Est saepe sed debitis cupiditate vitae natus?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, ratione, ipsa vel debitis architecto quaerat delectus harum reprehenderit veritatis dolore sint officia exercitationem. Est saepe sed debitis cupiditate vitae natus?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, ratione, ipsa vel debitis architecto quaerat delectus harum reprehenderit veritatis dolore sint officia exercitationem. Est saepe sed debitis cupiditate vitae natus?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, ratione, ipsa vel debitis architecto quaerat delectus harum reprehenderit veritatis dolore sint officia exercitationem. Est saepe sed debitis cupiditate vitae natus?
         </div>
     </div>
+    </div>
+
+
     <script src="cart.js"></script>
     <footer-component></footer-component>
 </body>
-<style>
-    .productTabSection{
-    background-color: grey;
-    }
 
-    .productTab.Nav{
-        padding:0;
-    }
 
-    .content{
-        padding:2%;
-        padding-right:6%;
-    }
 
-    .productTab ul{
-        background-color: orange;
-        display: flex;
-        justify-items: flex-start;
-        /* padding:10px; */
-        list-style: none;
-    }
-
-    .productTab ul li{
-        min-width:auto;
-        border:1px solid black;
-        margin-right:1rem;
-        margin-left:1rem;
-
-        /* width:15ch; */
-        padding:2px 0px;
-        /* margin-right: 2%; */
-        position: relative;
-    }
-
-</style>
 <script src="./templateElements/footer-component.js" type="module"></script>
 </html>

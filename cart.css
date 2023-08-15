@@ -1,11 +1,7 @@
 /* cart styling */
-.section.cart.layer1{
-    width:100%;
-    padding-top:20px;
-    padding:10%;
-    padding-top:20px;
-    padding-bottom:20px;
-    background-color: red;
+.cart.layer1{
+    width:60%;
+    margin:2rem 20%;
     display: flex;
     flex-direction: column;
 }
@@ -19,15 +15,13 @@ font-weight: 400;
 font-size: .8rem;
 }
 
-.OtherImages{
-    background-color: green;
+
+.imagesProductShow{
+    flex-basis:45% ;
 }
-:root{
-    --squaredWidth: 300px;
-}
+
 .imagesProductShow div:nth-child(1){
-    min-width: var(--squaredWidth);
-    min-height: var(--squaredWidth);    
+    height: 18.75rem;
 }
 
 .subsec:nth-child(1) span:nth-child(3){
@@ -44,7 +38,8 @@ font-size: .8rem;
 
 .subsec:nth-child(2) p, .subsec:nth-child(3) p{
     display: grid;
-    grid-template-columns: 1.5fr 2fr;    
+    padding:.35rem;
+    grid-template-columns: 1.5fr 2fr;
 }
 
 .cart .price{
@@ -58,9 +53,9 @@ font-size: .8rem;
 
 button{
     border-radius:3px;
-    padding:5px 10px;
+    padding:.5rem 1rem;
     max-height:30px;
-    height:30px;
+    height:2rem;
     border:none;
     cursor:pointer;
 }
@@ -70,7 +65,7 @@ button{
 }
 
 .qtyAction button{
-background-color: rgba(170, 222, 238, 0.986);
+    background-color: rgba(170, 222, 238, 0.986);
 }
 
 .addToCart{
@@ -105,7 +100,7 @@ background-color: rgba(170, 222, 238, 0.986);
     place-items: center;
 }
 
-.qty{    
+.qty{
     position:relative;
 }
 
@@ -113,7 +108,7 @@ background-color: rgba(170, 222, 238, 0.986);
     text-align: left;
 }
 
-.Facebook{    
+.Facebook{
     background-color: rgb(1, 53, 88);
     color:white;
 }
@@ -126,29 +121,156 @@ background-color: rgba(170, 222, 238, 0.986);
     padding:5px;
     width: 48%;
 }
-.section div{
-    border:1px solid rgba(0, 0, 0, 0.596);
-    min-height: 50px;
-}
 
 .top{
     display: flex;
+    padding-right:20%;
+    margin-bottom:2rem;
 }
 
 .top div{
-    flex:1;
+    flex:1 1 1;
 }
 
 .shortDescripSection{
-    background-color: orange;
-    padding-left:10px;
+    margin-left:1.5rem;
+    flex-basis:55% !important;
+    aspect-ratio: 1/1;
 }
 
 .shortDescripSection div.subsec{
-    padding:10px 0px;
+    padding:1rem 0px;
     border-bottom:2px solid grey;
+}
+
+.shortDescripSection div.subsec:last-child{
+    border-bottom: none;
 }
 
 .shortDescripSection div:nth-child(1){
     padding-top:0px;
+}
+
+.content{
+        padding:2rem;
+        padding-top:1.2rem;
+        padding-right:6rem;
+        min-height: 200px;
+        margin-bottom: 2rem;
+}
+
+.productTabs{
+        display: flex;
+        list-style: none;
+        padding-top:1rem;
+        padding-left:2rem;
+        border-bottom:.2rem solid rgb(196, 196, 196);
+}
+
+.productTabSection{
+        background-color: #efefef;
+        border-radius: .2rem;
+}
+
+
+.productTabs li{
+        padding-bottom:1.2rem;
+        margin-right:2rem;
+        position:relative;
+        cursor: pointer;
+}
+
+/*if li is active let the after pseudo element show*/
+.productTabs li.active::after{
+        opacity: 0.5;
+        content: '';
+        min-width:100%;
+        bottom:-.15rem;
+        left:0;
+        position: absolute;
+        border: 1px solid rgb(79, 79, 241);
+}
+
+
+ .OtherImages{
+    display: flex;
+    justify-content: space-between;
+}
+
+.MainImage{
+    overflow: hidden;
+    margin-bottom:1rem;
+}
+
+
+div.miniImageContainer{
+    border:1px solid black;
+    border:1px solid #efefef;
+    border-radius:.2rem;
+    max-height:4rem; /*Height of image*/
+    flex: 1;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    margin-right:.5rem;
+    transform: translateY(-.2rem); /*Trying to keep it at th center*/
+}
+
+div.miniImageContainer:last-child{
+    margin-right:0rem;
+}
+
+
+@media (max-width:1600px){
+    .top{
+        display: flex;
+        padding-right:0%;
+        margin-bottom:3rem;
+    }
+
+    .shortDescripSection{
+        margin-left:.8rem;
+    }
+}
+
+/*SMALLER TV SCREENS*/
+@media (max-width:1024px){
+    .section.cart.layer1{
+        padding:2rem 5%;
+    }
+    .cart.layer1{
+        width:90%;
+        margin:2rem 5%;
+    }
+
+    .productTabSection{
+        width:100%;
+    }
+}
+
+/*MOBILE PHONES AND  BIGGER TABLETS*/
+@media (max-width:768px){
+    .section.cart.layer1{
+        padding:2rem 5%;
+    }
+}
+
+/*SMALLER MOBILE PHONES*/
+@media (max-width:650px){
+    .top{
+        flex-direction: column;
+    }
+
+    .content{
+        padding-right:2rem;
+    }
+
+    .shortDescripSection{
+        margin-left:0rem;
+    }
+
+    .imagesProductShow{
+        background-color: #efefef;
+        margin-bottom:2rem;
+    }
 }
