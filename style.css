@@ -649,19 +649,18 @@
     }
 
     .section.searchField form button{
-        border:1px solid rgb(24, 151, 224);
         border-radius:0px 5px 5px 0px;
-        background-color: rgb(24, 151, 224);
         color:white;
         padding:15px 30px;
         cursor:pointer;
         transition:all 300ms;
     }
 
-    .section.searchField button:hover{
+    .section.searchField form button, .section.searchField button:hover{
         border:1px solid rgb(4, 115, 179);
         background-color: rgb(7, 127, 197);
     }
+
 
     .foot.layer1{
         border:solid #efefef;
@@ -735,6 +734,19 @@
         padding:0%;
         width:60%;
     }
+
+
+    @media (max-width:1500px){
+        .headerNav .dropDown{
+            /* width:200%; */
+            left:0;
+            background-color: red;
+        }
+
+        .head.layer3{
+            width:80%;
+        }
+
 
     /* TABLET DEVICES */
     @media (max-width:1024px){
