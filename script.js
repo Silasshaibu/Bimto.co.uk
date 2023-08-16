@@ -27,7 +27,7 @@ function activateCurrentMenu(){
 
     NavMenuBar.addEventListener('click', (e)=>{
         e.stopPropagation();
-        if(e.target){
+        if(e.target.parentNode == NavMenuBar){
             e.target.classList.add('active');
             dropdown.classList.add('active');
         }
