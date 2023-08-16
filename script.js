@@ -109,7 +109,10 @@ let headerSwitchers = document.querySelectorAll('.header-switch');
             langSwitcher.children[0].classList.remove('active');
         };
 
+        for(i=0; i<dropDown.children.length; i++){
 
+            console.log(dropDown.children[i]);
+        }
         //on click on any currency list, change the
         //previous currency to the current one
     }
