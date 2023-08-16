@@ -75,7 +75,7 @@ let headerSwitchers = document.querySelectorAll('.header-switch');
 
     function toggleLanguageSwitcher(){
         langSwitcher = document.querySelector('.langSwitcher')
-        dropDown = langSwitcher.querySelector('div');
+        let dropDown = langSwitcher.querySelector('div');
         let svg = langSwitcher.querySelector('svg');
         svg.classList.add('active');
         dropDown.classList.add('active');
@@ -100,7 +100,7 @@ let headerSwitchers = document.querySelectorAll('.header-switch');
 
     function toggleCurrencySwitcher(){
         currencySwitcher = document.querySelector('.currencySwitcher')
-        dropDown = currencySwitcher.querySelector('div');
+        let dropDown = currencySwitcher.querySelector('div');
         let svg = currencySwitcher.querySelector('svg');
         svg.classList.add('active');
         dropDown.classList.add('active');
@@ -108,6 +108,10 @@ let headerSwitchers = document.querySelectorAll('.header-switch');
             langSwitcher.children[1].classList.remove('active');
             langSwitcher.children[0].classList.remove('active');
         };
+
+
+        //on click on any currency list, change the
+        //previous currency to the current one
     }
 
     document.addEventListener('click', (event)=>{
